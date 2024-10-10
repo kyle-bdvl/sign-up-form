@@ -1,0 +1,53 @@
+body {
+  margin:0px;
+  padding:0px;
+  
+}
+
+
+.master{
+  border: 2px solid red;
+  height:100%;
+  width:100%;
+  display:flex;
+}
+
+img {
+  height:100%;
+  width:400px;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.randomText{
+  border: 2px solid green;
+  text-align: left;
+  
+  margin-top:30px;
+}
+
+.info{
+  border: 2px solid green;
+}
+
+.create{
+  border: 2px solid green;
+}
+
+.Account{
+  background-color: rgb(89, 109, 72);
+  color:white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  margin-left:15px;
+}
+
+#message{
+  margin-left:15px;
+  font-weight: 700;
+}
