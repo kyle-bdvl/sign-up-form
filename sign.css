@@ -90,6 +90,10 @@ body {
   font-size:1rem;
 }
 
+input > input:focus{
+  outline:none;
+  border:2px solid blue;
+}
 
 
 .category{ 
@@ -106,7 +110,7 @@ body {
   padding-left:40px;
 }
 
-.Account{
+#Account{
   background-color: rgb(89, 109, 72);
   color:white;
   padding: 10px 20px 10px 20px;
