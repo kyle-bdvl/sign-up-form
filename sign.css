@@ -12,7 +12,7 @@ body {
   display:flex;
 }
 
-img {
+.card-holder {
   height:100%;
   width:400px;
 }
@@ -79,6 +79,13 @@ img {
   border-radius: 4px;
   
 }
+
+input {
+  border-radius: 3px;
+  border: 2px solid rgb(236, 237, 240);
+}
+
+
 
 #message{
   

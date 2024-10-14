@@ -12,7 +12,7 @@
 <body>
   <div class="master">
     <div class="spacePhoto">
-      <img src="photos\leaf.jpg">
+      <img class="card-holder"src="photos\leaf.jpg">
     </div>
     <div class="container">
       <div class="randomText">
@@ -21,22 +21,24 @@
       </div>
       <div class="info">
         <b>Lets do this</b>
-        <div class="container2">
-          <div id="leftSide">
-            <p>FIRST NAME <input type="text"></p>
-            <p>PHONE NUMBER <input type="text"></p>
-            <p>PASSWORD<input type="email"></p>
-          </div>
-          <div id="rightSide">
-            <p>LAST NAME<input type="number"></p>
-            <p>EMAIL<input type="password"></p>
-            <p>CONFIRM PASSWORD<input type="password"></p>
+        <form action="#" method-get>
+          <div class="container2">
+            <div id="leftSide">
+              <label for="first_name">FIRST NAME <input type="text" onclick=""></label>
+              <label for="phone">PHONE NUMBER <input type="tel"></label>
+              <label for="password">PASSWORD<input type="password"></label>
+            </div>
+            <div id="rightSide">
+              <label for="last_name">LAST NAME<input type="text"></label>
+              <label for="email">EMAIL<input type="email"></label>
+              <label for=confirm_password">CONFIRM PASSWORD<input type="password"></label>
 
+            </div>
           </div>
         </div>
-      </div>
-      <div class="create">
-        <button class="Account">Create Account</button>
+        <div class="create">
+          <button class="Account">Create Account</button>
+      </form>
         <p id="message">Already have an account ? <span style="color:rgb(89, 109, 72)"> Log in</span> </p>
       </div>
     </div>
