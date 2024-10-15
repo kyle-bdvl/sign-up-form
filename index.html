@@ -25,27 +25,51 @@
           <br>Sign up now to get started.<p>You know you want to.</p>
         </div>
       </div>
-      <div class="info">
-        <b>Lets do this</b>
-        <form action="#" method-get>
-          <div class="container2">
-            <div id="leftSide">
-              <label for="first_name">FIRST NAME <input type="text" onclick=""></label>
-              <label for="phone">PHONE NUMBER <input type="tel"></label>
-              <label for="password">PASSWORD<input type="password" id="initial-password" required></label>
-            </div>
-            <div id="rightSide">
-              <label for="last_name">LAST NAME<input type="text"></label>
-              <label for="email">EMAIL<input type="email" required></label>
-              <label for=confirm_password">CONFIRM PASSWORD<input type="password" id="confirmation" required></label>
-            </div>
+      <form action="#">
+        <h2>Lets Do this</h2>
+        <div>
+          <div class="firstName">
+            <label for="first">First Name</label>
+            <input type="text" name="first-name" id="first" required>
+          </div>
+          <div class="lastName">
+            <label for="last">Last Name</label>
+            <input type="text" name="last-name" id="last" required>
           </div>
         </div>
-        <div class="create">
-          <button id="Account">Create Account</button>
+
+        <div>
+          <div class="email">
+            <label for="email">Email</label>
+            <input type='email' name="email" id="email" required>
+          </div>
+          <div class="phone">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" required>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input type='password' name="password" id="password" required>
+          </div>
+          
+          <div class="confirm">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" name="password" id="confirm" required>
+          </div>
+        </div>
       </form>
-        <p id="message">Already have an account ? <span style="color:rgb(89, 109, 72)"> Log in</span> </p>
-      </div>
+
+      <div class="button">
+        <button>Create Account</button>
+
+        <p id="message">Already have an Account ? <span>Log in</span></p>
+
+    </div>
+      
     </div>
     <!-- the end of the body  -->
      <script src="sign.js"></script>
