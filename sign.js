@@ -1,14 +1,16 @@
-document.getElementById('Account').addEventListener("click",function(event){
-  const password = document.getElementsByClassName('initial-password').value;
-  const confirm = document.getElementsByClassName('confirmation').value;
-  console.log("initialPassword: "+password);
-  console.log('confirmed password :'+ confirm);
-  if (initialPassword === confirm){
-    alert("Account created Succefully !");
-  
+const alert = document.querySelector('.passwordAlert');
+const password=document.querySelector('#password');
+const confirm=document.querySelector('#confirm');
+
+password.addEventListener("keyup" ,e =>{
+ if(password.value !==confirm.value) {
+    alert.style.display='inline-block';
+ }
+})
+
+confirm.addEventListener("keyup", e=>{
+  if(password.value == confirm.value){
+    alert.style.display="none";
+    document.querySelector('input[type="password"]:focus').style.outlineColor = "green";
   }
-  else{
-    event.preventDefault();
-    alert("password and confirmed password doesn't match. Re-enter password")
-  }
-});
+})
